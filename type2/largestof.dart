@@ -1,17 +1,19 @@
 import'dart:io';
-void largestNumber(int num1,int num2,int num3){
-    if(num1>num2){
-    print("largest numberis $num1");
+void largestNumber(int a,int b,int c){
+    if((a>b)&&(a>c)){
+    print("$a is the largest number");
     }
-    else if(num1>num3){
-    print("largest numberis $num2");}
-    else{
-        print("largest numberis $num2");
+else if((b>a)&&(b>c)){
+    print("$b is the largest number");
+    }
+else{
+    print("$c is the largest number");
     }
     }
 void main(){
-    stdout.write("enter 2 numbers:");
-    int num1=int.parse(stdin.readLineSync()!);
-    int num2=int.parse(stdin.readLineSync()!);
-    largestNumber(num1,num2);
+    stdout.write("enter 3 numbers:");
+    int a=int.parse(stdin.readLineSync()!);
+    int b=int.parse(stdin.readLineSync()!);
+    int c=int.parse(stdin.readLineSync()!);
+    largestNumber(a,b,c);
     }
